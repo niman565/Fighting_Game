@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[margin=.5in, paperwidth=6in, paperheight=5in]{geometry}
+\usepackage{ProofPower, graphicx, listings, alltt, enumerate}
+\usepackage{animate}
+\begin{document}
+\begin{GFT}{C++ source code written to file infowindow.cpp}
+\+\#include <iostream>\\
+\+\#include <sstream>\\
+\+\#include <FL/Fl.H>\\
+\+\#include <FL/Fl\_Window.H>\\
+\+\#include <FL/Fl\_Text\_Display.H>\\
+\+\\
+\+void InfoWindow::backButtonPress() \{\\
+\+    this->hide();\\
+\+    startWindow->startup();\\
+\+\}\\
+\+\\
+\+void InfoWindow::startup() \{\\
+\+    this->show();\\
+\+    backgroundBox->image(backgroundImage);\\
+\end{GFT}
+\clearpage
+This is the developer information.
+\begin{GFT}{C++ source code appended to file infowindow.cpp}
+\+    Fl\_Text\_Buffer *gameInfo = new Fl\_Text\_Buffer();\\
+\+    gameInfoBox->buffer(gameInfo);\\
+\+    gameInfo->text("Moves: \Backslash{}n W -- High Attack \Backslash{}n \\
+\+                    S -- Mid Attack \Backslash{}n X -- Low Attack \Backslash{}n \\
+\+                    Q -- High Block \Backslash{}n A -- Mid Block \Backslash{}n \\
+\+                    Z -- Low Block \Backslash{}n  \Backslash{}n Fighter Types: \Backslash{}n\\
+\+                    Aggressive -- High attack power, low block toughness \Backslash{}n\\
+\+                    Balanced -- Moderate attack power, moderate \\
+\+                    block toughness \Backslash{}n \\
+\+                    Defensive -- Low attack power, \\
+\+                    high block toughness \Backslash{}n \Backslash{}n Goal: \Backslash{}n DEFEAT \\
+\+                    your opponent!!!");\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file infowindow.cpp}
+\+    Fl\_Text\_Buffer *devInfo = new Fl\_Text\_Buffer();\\
+\+    devInfoBox->buffer(devInfo);\\
+\+    devInfo->text("Programmers: \Backslash{}n Michael Liu \Backslash{}n Henry Sun \Backslash{}n \\
+\+                   Nihal Manjunath \Backslash{}n Charles Hong");\\
+\+\}\\
+\end{GFT}
+\end{document}

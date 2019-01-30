@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[margin=.5in, paperwidth=6in, paperheight=5in]{geometry}
+\usepackage{ProofPower, graphicx, listings, alltt, enumerate}
+\usepackage{animate}
+\begin{document}
+\begin{GFT}{C++ source code written to file Fighter.cpp}
+\+\#include "Stance.cpp"\\
+\+\\
+\+class Fighter \{\\
+\+    private:\\
+\+        Stance* stances[7];\\
+\+        Stance* currentStance;\\
+\+        bool blockBonusOn;\\
+\+        int blockBonus;\\
+\+        bool attackBonusOn;\\
+\+        int attackBonus;\\
+\+        std::string name;\\
+\+        int chanceOfAttack;\\
+\+        int health;\\
+\+    public:\\
+\+        const static int AGGRESSIVE = 0;\\
+\+        const static int BALANCED = 1;\\
+\+        const static int DEFENSIVE = 2;\\
+\+        const static int AGGRESSIVE\_FLIPPED = 3;\\
+\+        const static int BALANCED\_FLIPPED = 4;\\
+\+        const static int DEFENSIVE\_FLIPPED = 5;\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file Fighter.cpp}
+\+\\
+\+        const static int NEUTRAL = 0;\\
+\+        const static int ATTACK\_LOW = 1;\\
+\+        const static int ATTACK\_MID = 2;\\
+\+        const static int ATTACK\_HIGH = 3;\\
+\+        const static int BLOCK\_LOW = 4;\\
+\+        const static int BLOCK\_MID = 5;\\
+\+        const static int BLOCK\_HIGH = 6;\\
+\+\\
+\+        Fl\_GIF\_Image* getImage(void) \{ return currentStance->getImage(); \}\\
+\+        int getChanceOfAttack(void) \{ return chanceOfAttack; \}\\
+\+        int getHealth(void) \{ return health; \}\\
+\+        int getPower(void);\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file Fighter.cpp}
+\+        int getToughness(void);\\
+\+        int getStanceType(void) \{ return currentStance->getType(); \}\\
+\+        int getStanceHeight(void) \{ return currentStance->getHeight(); \}\\
+\+        std::string getStanceName(void) \{ return currentStance->getName(); \}\\
+\+        std::string getName(void) \{ return name; \}\\
+\+        void setStance(int type);\\
+\+        void adjustHealth(int change) \{ health += change; \}\\
+\+        void toggleBlockBonus(bool set) \{ blockBonusOn = set; \}\\
+\+        void toggleAttackBonus(bool set) \{ attackBonusOn = set; \}\\
+\+        Fighter(int style);\\
+\+\};\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file Fighter.cpp}
+\+Fighter::Fighter(int style) \{\\
+\+    health = 100;\\
+\+    for (int i = 0; i < 7; i++) \{\\
+\+        stances[i] = new Stance(style, i);\\
+\+    \}\\
+\+    currentStance = stances[0];\\
+\+    if (style == 0 || style == 3) \{\\
+\+        blockBonus = 2;\\
+\+        attackBonus = 3;\\
+\+        chanceOfAttack = 70;\\
+\+        name = "Aggressive";\\
+\+    \} else if (style == 1 || style == 4) \{\\
+\+        blockBonus = 4;\\
+\+        attackBonus = 2;\\
+\+        chanceOfAttack = 50;\\
+\+        name = "Balanced";\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file Fighter.cpp}
+\+    \} else if (style == 2 || style == 5) \{\\
+\+        blockBonus = 4;\\
+\+        attackBonus = 1;\\
+\+        chanceOfAttack = 40;\\
+\+        name = "Defensive";\\
+\+    \}\\
+\+    setStance(0);\\
+\+    blockBonusOn = false;\\
+\+    attackBonusOn = false;\\
+\+\}\\
+\+\\
+\+int Fighter::getPower(void) \{\\
+\+    if (attackBonusOn) \{\\
+\+        return currentStance->getPower() + attackBonus;\\
+\+        attackBonusOn = false;\\
+\+    \} else \{\\
+\+        return currentStance->getPower();\\
+\+    \}\\
+\+\}\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file Fighter.cpp}
+\+int Fighter::getToughness(void) \{\\
+\+    if (blockBonusOn) \{\\
+\+        return currentStance->getToughness() + blockBonus;\\
+\+        blockBonusOn = false;\\
+\+    \} else \{\\
+\+        return currentStance->getToughness();\\
+\+    \}\\
+\+\}\\
+\+\\
+\+void Fighter::setStance(int type) \{\\
+\+    currentStance = stances[type];\\
+\+\}\\
+\end{GFT}
+\end{document}

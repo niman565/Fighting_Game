@@ -1,0 +1,666 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.18)  15 MAY 2015 18:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fight.tex
+(./fight.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 2 languages loaded.
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/home/tc/texmf/tex/latex/pp/ProofPower.sty
+$Revision: 1.21 $ $Date: 2011/08/06 15:52:29 $
+Package: ProofPower 
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 9.
+\ft@strutbox=\box26
+\tabstop=\dimen111
+\ftlmargin=\dimen112
+\ftrmargin=\dimen113
+\ft@width=\dimen114
+\ftlinepenalty=\count90
+\ftaboveboxskip=\skip43
+\ftbelowboxskip=\skip44
+\ftspaceskip=\muskip10
+\@A=\dimen115
+\@B=\dimen116
+\@block=\box27
+\@line=\box28
+\UL@level=\count91
+\UL@t=\count92
+\RM@EX=\dimen117
+\RM@EM=\dimen118
+\endFT@penalty=\count93
+\FR@Name=\box29
+\FR@Above=\box30
+\FR@Below=\box31
+\FR@FullFtwidth=\dimen119
+\FR@LHS=\box32
+\FR@RhsRaise=\dimen120
+\FR@Help=\toks16
+\@oldtabstop=\dimen121
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count95
+\lst@gtempboxa=\box33
+\lst@token=\toks17
+\lst@length=\count96
+\lst@currlwidth=\dimen124
+\lst@column=\count97
+\lst@pos=\count98
+\lst@lostspace=\dimen125
+\lst@width=\dimen126
+\lst@newlines=\count99
+\lst@lineno=\count100
+\lst@maxwidth=\dimen127
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
+\lst@framebox=\box34
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks18
+) (./animate.sty
+Package: animate 2015/03/11 PDF animations from files and inline graphics
+
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count103
+\calc@Bcount=\count104
+\calc@Adimen=\dimen128
+\calc@Bdimen=\dimen129
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count105
+\calc@Cskip=\skip47
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/atenddvi.sty
+Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count106
+Package zref Info: New property: abspage on input line 62.
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/atveryend.sty
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+Package zref Info: New property list: LastPage on input line 55.
+)) (./animfp.sty
+Package: animfp 2009/07/23 fixed point addition for animate.sty
+\afp@xs=\count107
+\afp@xia=\count108
+\afp@xib=\count109
+\afp@xfa=\count110
+\afp@xfb=\count111
+\afp@rega=\count112
+\afp@regb=\count113
+\afp@regs=\count114
+) (/mnt/sdb1/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen130
+\scratchbox=\box35
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen131
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks20
+)
+\@anim@box=\box36
+\@anim@measbox=\box37
+\@anim@tmpdima=\dimen132
+\@anim@tmpdimb=\dimen133
+\@anim@ocnum=\count121
+\@anim@num=\count122
+\@anim@curframe=\count123
+\@anim@curframe@zb=\count124
+\@anim@resizeflags=\count125
+\@anim@skipfram=\count126
+\@anim@mulframecnt=\count127
+\@anim@@tmlnfile=\read1
+\@anim@tmpcnt=\count128
+\c@@anim@ltxcnt=\count129
+\@anim@curlayer=\count130
+\@anim@lineno=\count131
+\@anim@curfield=\count132
+\@anim@begin=\toks21
+\@anim@end=\toks22
+\@anim@@resizeflags=\count133
+) (./fight.aux)
+\openout1 = `fight.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 361.35pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 289.08pt, 36.135pt)
+* \paperwidth=433.62pt
+* \paperheight=361.34999pt
+* \textwidth=361.35pt
+* \textheight=289.08pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count134
+\AtBeginShipoutBox=\box38
+ [1
+
+{/mnt/sdb1/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (27.1466pt too wide) in paragraph at lines 22--22
+[]             \OT1/cmtt/m/n/10 run probabilistic algorithms to change other fi
+ghter's stance[] 
+ []
+
+[2
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+ (/mnt/sdb1/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+ [3
+
+]
+Overfull \hbox (0.5118pt too wide) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/10 Information screen--Displays game and de-vel-oper in-for-ma-t
+ion in two text boxes 
+ []
+
+[4] [5]
+Overfull \hbox (1.07262pt too wide) in paragraph at lines 111--112
+[]\OT1/cmr/m/n/10 change player's Fighter's stance de-pend-ing on spe-cific key
+ pressed 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 112.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
+
+(/mnt/sdb1/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (31.6006pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/10 generate ran-dom num-ber with rand() to ran-domly se-lect opp
+onent$\OMS/cmsy/m/n/10 ?$$^^R$$\OT1/cmr/m/n/10 	$s
+ []
+
+[6] <design/selectionscreen.png, id=26, 713.66624pt x 401.5pt>
+File: design/selectionscreen.png Graphic file (type png)
+
+<use design/selectionscreen.png>
+Package pdftex.def Info: design/selectionscreen.png used on input line 158.
+(pdftex.def)             Requested size: 214.10152pt x 120.45091pt.
+
+<design/gamescreen.png, id=27, 713.66624pt x 401.5pt>
+File: design/gamescreen.png Graphic file (type png)
+
+<use design/gamescreen.png>
+Package pdftex.def Info: design/gamescreen.png used on input line 159.
+(pdftex.def)             Requested size: 214.10152pt x 120.45091pt.
+ [7] [8 <./design/selectionscreen.png> <./design/gamescreen.png>] <Fighter.pdf,
+ id=35, page=2, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 2>
+Package pdftex.def Info: Fighter.pdf, page2 used on input line 167.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+ <Fighter.pdf, id=36, page=3, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 3>
+Package pdftex.def Info: Fighter.pdf, page3 used on input line 168.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+ <Fighter.pdf, id=37, page=4, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 4>
+Package pdftex.def Info: Fighter.pdf, page4 used on input line 169.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+ <Fighter.pdf, id=38, page=5, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 5>
+Package pdftex.def Info: Fighter.pdf, page5 used on input line 170.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+ <Fighter.pdf, id=39, page=6, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 6>
+Package pdftex.def Info: Fighter.pdf, page6 used on input line 171.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+ <Fighter.pdf, id=40, page=7, 433.62pt x 361.35pt>
+File: Fighter.pdf Graphic file (type pdf)
+
+<use Fighter.pdf, page 7>
+Package pdftex.def Info: Fighter.pdf, page7 used on input line 172.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 167--173
+[] 
+ []
+
+[9]
+Overfull \vbox (434.61824pt too high) has occurred while \output is active []
+
+
+[10 <./Fighter.pdf> <./Fighter.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[11 <./Fighter.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[12 <./Fighter.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[13 <./Fighter.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[14 <./Fighter.pdf>]
+<backgroundselectionwindow.pdf, id=94, page=1, 433.62pt x 361.35pt>
+File: backgroundselectionwindow.pdf Graphic file (type pdf)
+
+<use backgroundselectionwindow.pdf, page 1>
+Package pdftex.def Info: backgroundselectionwindow.pdf, page1 used on input lin
+e 176.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+<backgroundselectionwindow.pdf, id=95, page=2, 433.62pt x 361.35pt>
+File: backgroundselectionwindow.pdf Graphic file (type pdf)
+
+<use backgroundselectionwindow.pdf, page 2>
+Package pdftex.def Info: backgroundselectionwindow.pdf, page2 used on input lin
+e 177.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+<backgroundselectionwindow.pdf, id=96, page=3, 433.62pt x 361.35pt>
+File: backgroundselectionwindow.pdf Graphic file (type pdf)
+
+<use backgroundselectionwindow.pdf, page 3>
+Package pdftex.def Info: backgroundselectionwindow.pdf, page3 used on input lin
+e 178.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+<backgroundselectionwindow.pdf, id=97, page=4, 433.62pt x 361.35pt>
+File: backgroundselectionwindow.pdf Graphic file (type pdf)
+
+<use backgroundselectionwindow.pdf, page 4>
+Package pdftex.def Info: backgroundselectionwindow.pdf, page4 used on input lin
+e 179.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Overfull \hbox (87.26894pt too wide) in paragraph at lines 176--180
+[][]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 176--180
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 176--180
+[]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 176--180
+[] 
+ []
+
+[15]
+Overfull \vbox (434.61824pt too high) has occurred while \output is active []
+
+
+[16 <./backgroundselectionwindow.pdf> <./backgroundselectionwindow.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[17 <./backgroundselectionwindow.pdf>]
+Overfull \vbox (72.26912pt too high) has occurred while \output is active []
+
+
+[18 <./backgroundselectionwindow.pdf>]
+<infowindow.pdf, id=129, page=1, 433.62pt x 361.35pt>
+File: infowindow.pdf Graphic file (type pdf)
+
+<use infowindow.pdf, page 1>
+Package pdftex.def Info: infowindow.pdf, page1 used on input line 183.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+<infowindow.pdf, id=130, page=2, 433.62pt x 361.35pt>
+File: infowindow.pdf Graphic file (type pdf)
+
+<use infowindow.pdf, page 2>
+Package pdftex.def Info: infowindow.pdf, page2 used on input line 184.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Overfull \hbox (87.26894pt too wide) in paragraph at lines 183--185
+[][]
+ []
+
+
+Overfull \hbox (72.26894pt too wide) in paragraph at lines 183--185
+[] 
+ []
+
+[19]
+Overfull \vbox (434.61824pt too high) has occurred while \output is active []
+
+
+[20 <./infowindow.pdf> <./infowindow.pdf>] [21] [22]
+<test1.png, id=164, 602.25pt x 401.5pt>
+File: test1.png Graphic file (type png)
+ <use test1.png>
+Package pdftex.def Info: test1.png used on input line 231.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [23] [24 <./test1.png>] <test2.png, id=171, 602.25pt x 401.5pt>
+File: test2.png Graphic file (type png)
+ <use test2.png>
+Package pdftex.def Info: test2.png used on input line 233.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [25
+
+ <./test2.png>]
+<test3.png, id=176, 602.25pt x 401.5pt>
+File: test3.png Graphic file (type png)
+ <use test3.png>
+Package pdftex.def Info: test3.png used on input line 235.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [26
+
+ <./test3.png>]
+<test4.png, id=180, 602.25pt x 401.5pt>
+File: test4.png Graphic file (type png)
+ <use test4.png>
+Package pdftex.def Info: test4.png used on input line 237.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [27
+
+ <./test4.png>]
+<test5.png, id=184, 602.25pt x 401.5pt>
+File: test5.png Graphic file (type png)
+ <use test5.png>
+Package pdftex.def Info: test5.png used on input line 239.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [28
+
+ <./test5.png>]
+<test6.png, id=188, 602.25pt x 401.5pt>
+File: test6.png Graphic file (type png)
+ <use test6.png>
+Package pdftex.def Info: test6.png used on input line 241.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ [29
+
+ <./test6.png>]
+<test7.png, id=192, 602.25pt x 401.5pt>
+File: test7.png Graphic file (type png)
+ <use test7.png>
+Package pdftex.def Info: test7.png used on input line 243.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
+Package atenddvi Info: Last page = 30.
+ [30
+
+ <./test7.png>]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 248.
+
+(./fight.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
+ ) 
+Here is how much of TeX's memory you used:
+ 4721 strings out of 495025
+ 67909 string characters out of 6181570
+ 153007 words of memory out of 5000000
+ 7850 multiletter control sequences out of 15000+600000
+ 7928 words of font info for 30 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 48i,5n,32p,535b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+</mnt/sdb1/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></mnt
+/sdb1/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></mnt/sdb1/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></mnt/sdb1/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></mnt/sdb1/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr5.pfb></mnt/sdb1/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></mnt/sdb1/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb></mnt/sdb1/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on fight.pdf (30 pages, 2270532 bytes).
+PDF statistics:
+ 217 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+

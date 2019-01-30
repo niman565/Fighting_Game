@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[margin=.5in, paperwidth=6in, paperheight=5in]{geometry}
+\usepackage{ProofPower, graphicx, listings, alltt, enumerate}
+\usepackage{animate}
+\begin{document}
+\begin{GFT}{C++ source code written to file backgroundselectionwindow.cpp}
+\+int BackgroundSelectionWindow::handle(int event) \{\\
+\+    static bool selectBoxIsGrabbed = false;\\
+\+    int returnCode = Fl\_Double\_Window::handle(event);\\
+\+    if (event == FL\_DRAG) \{\\
+\+        returnCode = 1;\\
+\+        if (selectBoxIsGrabbed) \{\\
+\+            backgroundSelectionWindow->selectBox->\\
+\+                  position(Fl::event\_x() - selectBox->w()/2,                                         Fl::event\_y() - selectBox->h()/2);\\
+\+            backgroundSelectionWindow->redraw();\\
+\+        \}\\
+\+    \}\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file backgroundselectionwindow.cpp}
+\+    if (event == FL\_PUSH) \{\\
+\+        returnCode = 1;\\
+\+        if (Fl::event\_x() > selectBox->x()\\
+\+         \&\& Fl::event\_x() < selectBox->x() + selectBox->w()\\
+\+         \&\& Fl::event\_y() > selectBox->y()\\
+\+         \&\& Fl::event\_y() < selectBox->y() + selectBox->h()) \{\\
+\+            selectBoxIsGrabbed = true;\\
+\+        \}\\
+\+    \}\\
+\+    if (event == FL\_RELEASE) \{\\
+\+        returnCode = 1;\\
+\+        selectBoxIsGrabbed = false;\\
+\+    \}\\
+\+    return returnCode;\\
+\+\}\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file backgroundselectionwindow.cpp}
+\+int BackgroundSelectionWindow::getSelectedOption() \{\\
+\+    int x = backgroundSelectionWindow->selectBox->x();\\
+\+    int y = backgroundSelectionWindow->selectBox->y();\\
+\+    for (int i = 0; i < 6; i++) \{\\
+\+        if (x > backgroundSelectionWindow->options[i]->x()\\
+\+                - backgroundSelectionWindow->selectBox->w()\\
+\+         \&\& x < backgroundSelectionWindow->options[i]->x()\\
+\+                + backgroundSelectionWindow->options[i]->w()\\
+\+         \&\& y > backgroundSelectionWindow->options[i]->y()\\
+\+                - backgroundSelectionWindow->selectBox->h()\\
+\+         \&\& y < backgroundSelectionWindow->options[i]->y()\\
+\+                + backgroundSelectionWindow->options[i]->h()) \{\\
+\+            return i;\\
+\+        \}\\
+\+    \}\\
+\+    return -1;\\
+\+\}\\
+\end{GFT}
+\clearpage
+\begin{GFT}{C++ source code appended to file backgroundselectionwindow.cpp}
+\+void BackgroundSelectionWindow::selectButtonPress() \{\\
+\+    int option = backgroundSelectionWindow->getSelectedOption();\\
+\+    if (option != -1) \{\\
+\+        std::ostringstream fileName;\\
+\+        fileName << "images/backgrounds/" << option << ".gif";\\
+\+        backgroundImage = new Fl\_GIF\_Image(fileName.str().c\_str());\\
+\+        this->hide();\\
+\+        startWindow->startup();\\
+\+    \}\\
+\+    std::cout << "Background image set to " << option << std::endl;\\
+\+\}\\
+\end{GFT}
+\end{document}

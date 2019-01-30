@@ -1,0 +1,91 @@
+#include <iostream>
+#include <sstream>
+
+class Stance {
+    private:
+        int power;
+        int toughness;
+        int type;
+        int height;
+        std::string name;
+        Fl_GIF_Image* image;
+    public:
+        Stance(int style, int type);
+        int getPower(void) { return power; }
+        int getToughness(void) { return toughness; }
+        int getType(void) { return type; }
+        int getHeight(void) { return height; }
+        std::string getName(void) { return name; }
+        Fl_GIF_Image* getImage(void) { return image; }
+};
+
+Stance::Stance(int style, int type) {
+    this->type = type;
+    std::ostringstream fileName;
+    fileName << "images/fighters/" << style << type << ".gif";
+    image = new Fl_GIF_Image(fileName.str().c_str());
+    if (style == 0 || style == 3) {
+        if (type == 0) {
+            power = 0;
+            toughness = 2;
+        } else if (type == 1 || type == 2 || type == 3) {
+            power = 8;
+            toughness = 0;
+        } else if (type == 4 || type == 5 || type == 6) {
+            power = 0;
+            toughness = 0;
+        }
+    } else if (style == 1 || style == 4) {
+        if (type == 0) {
+            power = 0;
+            toughness = 3;
+        } else if (type == 1 || type == 2 || type == 3) {
+            power = 6;
+            toughness = 0;
+        } else if (type == 4 || type == 5 || type == 6) {
+            power = 0;
+            toughness = 0;
+        }
+    } else if (style == 2 || style == 5) {
+        if (type == 0) {
+            power = 0;
+            toughness = 3;
+        } else if (type == 1 || type == 2 || type == 3) {
+            power = 5;
+            toughness = 2;
+        } else if (type == 4 || type == 5 || type == 6) {
+            power = 0;
+            toughness = 2;
+        }
+    }
+    if (type == 1 || type == 4) {
+        height = 0;
+    } else if (type == 2 || type == 5) {
+        height == 1;
+    } else if (type == 3 || type == 6) {
+        height = 2;
+    }
+    switch(type) {
+        case 0:
+            name = "neutral";
+            break;
+        case 1:
+            name = "low attack";
+            break;
+        case 2:
+            name = "mid attack";
+            break;
+        case 3:
+            name = "high attack";
+            break;
+        case 4:
+            name = "low block";
+            break;
+        case 5:
+            name = "mid block";
+            break;
+        case 6:
+            name = "high block";
+            break;
+    }
+}

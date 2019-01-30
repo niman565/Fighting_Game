@@ -1,0 +1,409 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0110 
+header_name {.h} 
+code_name {.cxx}
+decl {\#include <FL/Fl_GIF_Image.H>} {public global
+} 
+
+decl {\#include <string>} {public global
+} 
+
+decl {class Fighter;} {public global
+} 
+
+widget_class BackgroundSelectionWindow {
+  label {Select a Background} open
+  xywh {159 294 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {int handle(int event);} {}
+  decl {int getSelectedOption();} {}
+  decl {void selectButtonPress();} {}
+  decl {void startup();} {public
+  }
+  Fl_Box {options[0]} {
+    image {images/backgrounds/thumbnails/0.gif} xywh {20 20 120 80}
+  }
+  Fl_Box {options[1]} {
+    image {images/backgrounds/thumbnails/1.gif} xywh {20 120 120 80}
+  }
+  Fl_Box {options[2]} {
+    image {images/backgrounds/thumbnails/2.gif} xywh {20 220 120 80}
+  }
+  Fl_Box {options[3]} {
+    image {images/backgrounds/thumbnails/3.gif} xywh {460 20 120 80}
+  }
+  Fl_Box {options[4]} {
+    image {images/backgrounds/thumbnails/4.gif} xywh {460 120 120 80}
+  }
+  Fl_Box {options[5]} {
+    image {images/backgrounds/thumbnails/5.gif} xywh {460 220 120 80}
+  }
+  Fl_Box selectBox {
+    xywh {290 150 20 20} box ROUNDED_BOX color 4
+  }
+  Fl_Button selectButton {
+    label Select
+    callback {backgroundSelectionWindow->selectButtonPress();}
+    xywh {270 350 60 20}
+  }
+} 
+
+widget_class StartWindow {
+  label {Main Menu} open
+  xywh {127 314 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {void startButtonPress();} {}
+  decl {void howButtonPress();} {}
+  decl {void quitButtonPress();} {}
+  decl {void startup();} {public
+  }
+  Fl_Box backgroundBox {
+    xywh {0 0 600 400}
+  }
+  Fl_Button startButton {
+    label START
+    callback {startWindow->startButtonPress();}
+    xywh {200 75 200 50} labelsize 18
+  }
+  Fl_Button howButton {
+    label {HOW TO PLAY}
+    callback {startWindow->howButtonPress();} selected
+    xywh {200 175 200 50} labelsize 18
+  }
+  Fl_Button quitButton {
+    label QUIT
+    callback {startWindow->quitButtonPress();}
+    xywh {200 275 200 50} labelsize 18
+  }
+} 
+
+widget_class InfoWindow {
+  label {About the Game} open
+  xywh {160 160 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {void backButtonPress();} {}
+  decl {void startup();} {public
+  }
+  Fl_Box backgroundBox {
+    xywh {0 0 600 400}
+  }
+  Fl_Text_Display gameInfoBox {
+    xywh {40 40 240 320}
+  }
+  Fl_Text_Display devInfoBox {
+    xywh {320 40 240 320}
+  }
+  Fl_Button backButton {
+    label Back
+    callback {infoWindow->backButtonPress();}
+    xywh {270 15 64 20}
+  }
+} 
+
+widget_class FighterSelectionWindow {
+  label {Select a Fighter} open
+  xywh {110 110 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {Fl_GIF_Image* aggressiveImage;} {}
+  decl {Fl_GIF_Image* balancedImage;} {}
+  decl {Fl_GIF_Image* defensiveImage;} {}
+  decl {void selectButtonPress();} {}
+  decl {void startup();} {public
+  }
+  decl {int playerStyle;} {}
+  Fl_Box backgroundBox {
+    xywh {0 0 600 400}
+  }
+  Fl_Box fighterBox {
+    xywh {130 95 187 200}
+  }
+  Fl_Output instructionBox {
+    xywh {375 50 120 25}
+  }
+  Fl_Button aggressiveButton {
+    label Aggressive
+    callback {fighterSelectionWindow->fighterBox->image(aggressiveImage);
+fighterSelectionWindow->playerStyle = 0;
+fighterSelectionWindow->redraw();}
+    xywh {385 125 100 25}
+  }
+  Fl_Button balancedButton {
+    label Balanced
+    callback {fighterSelectionWindow->fighterBox->image(balancedImage);
+fighterSelectionWindow->playerStyle = 1;
+fighterSelectionWindow->redraw();}
+    xywh {385 175 100 25}
+  }
+  Fl_Button defensiveButton {
+    label Defensive
+    callback {fighterSelectionWindow->fighterBox->image(defensiveImage);
+fighterSelectionWindow->playerStyle = 2;
+fighterSelectionWindow->redraw();}
+    xywh {385 225 100 25}
+  }
+  Fl_Button selectButton {
+    label {Fight!}
+    callback {fighterSelectionWindow->selectButtonPress();}
+    xywh {405 325 60 25}
+  }
+} 
+
+widget_class GameWindow {
+  label {Fight!} open
+  xywh {74 118 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {Fighter* player;} {}
+  decl {Fighter* opponent;} {}
+  decl {int score;} {}
+  decl {bool moveIsSelected;} {}
+  decl {int handle(int event);} {}
+  decl {void startup(int playerStyle);} {public
+  }
+  decl {int getScore();} {public
+  }
+  decl {Fighter* getPlayer();} {public
+  }
+  decl {Fighter* getOpponent();} {public
+  }
+  decl {bool getMoveIsSelected();} {public
+  }
+  decl {void setMoveIsSelected(bool value);} {public
+  }
+  decl {void decrementScore();} {public
+  }
+  Fl_Box {} {
+    xywh {280 33 45 24} box ROUNDED_BOX color 7
+  }
+  Fl_Box {} {
+    xywh {225 114 45 22} box ROUNDED_BOX color 7
+  }
+  Fl_Box {} {
+    xywh {330 113 45 22} box ROUNDED_BOX color 7
+  }
+  Fl_Box backgroundBox {
+    xywh {0 0 600 400}
+  }
+  Fl_Box playerFighterBox {
+    xywh {160 140 187 200}
+  }
+  Fl_Box opponentFighterBox {
+    xywh {250 140 187 200}
+  }
+  Fl_Output playerNameBox {
+    xywh {180 95 120 20} labelfont 8
+  }
+  Fl_Output opponentNameBox {
+    xywh {300 95 120 20} labelfont 8
+  }
+  Fl_Output playerStanceBox {
+    xywh {180 340 120 20} labelfont 8
+  }
+  Fl_Output opponentStanceBox {
+    xywh {300 340 120 20} labelfont 8
+  }
+  Fl_Value_Output playerHealthBox {
+    label health
+    xywh {270 115 30 20}
+  }
+  Fl_Value_Output opponentHealthBox {
+    label health
+    xywh {300 115 30 20} align 8
+  }
+  Fl_Value_Output scoreBox {
+    label score
+    xywh {285 55 35 20} align 5
+  }
+} 
+
+widget_class EndWindow {
+  label {Game Over} open
+  xywh {140 140 600 400} type Double
+  class Fl_Double_Window visible
+} {
+  decl {int score;} {}
+  decl {void highScoresButtonPress();} {}
+  decl {void mainMenuButtonPress();} {}
+  decl {void startup(int playerHealth, int gameScore);} {public
+  }
+  Fl_Box backgroundBox {
+    xywh {0 5 600 400}
+  }
+  Fl_Box {} {
+    xywh {255 183 90 68} box FLAT_BOX color 7
+  }
+  Fl_Value_Output healthBox {
+    label {Health:}
+    xywh {308 190 30 25}
+  }
+  Fl_Value_Output scoreBox {
+    label {Score:}
+    xywh {308 220 30 25}
+  }
+  Fl_Output messageBox {
+    xywh {260 90 80 45}
+  }
+  Fl_Button highScoresButton {
+    label {High Scores}
+    callback {endWindow->highScoresButtonPress();}
+    xywh {255 280 90 20}
+  }
+  Fl_Button mainMenuButton {
+    label {Back to Menu}
+    callback {endWindow->mainMenuButtonPress();}
+    xywh {255 280 90 20}
+  }
+} 
+
+widget_class ScoreWindow {
+  label Scores open
+  xywh {150 150 600 400} type Double hide
+  class Fl_Double_Window
+} {
+  decl {static const int numberOfScores = 5;} {public
+  }
+  decl {int userScore;} {public
+  }
+  decl {std::string userName} {public
+  }
+  decl {int scores[numberOfScores];} {public
+  }
+  decl {std::string names[numberOfScores];} {public
+  }
+  decl {void startup(int gameScore);} {public
+  }
+  decl {void saveScores();} {}
+  decl {void loadScores();} {}
+  decl {void sortScores();} {}
+  decl {int insertScore();} {}
+  decl {void backButtonPress();} {}
+  decl {void submitButtonPress();} {}
+  Fl_Box backgroundBox {
+    xywh {0 0 600 400}
+  }
+  Fl_Value_Output {scoreOutput[0]} {
+    label {1st:}
+    xywh {270 171 33 24}
+  }
+  Fl_Value_Output {scoreOutput[1]} {
+    label {2nd:}
+    xywh {270 206 33 24}
+  }
+  Fl_Value_Output {scoreOutput[2]} {
+    label {3rd:}
+    xywh {270 241 33 24}
+  }
+  Fl_Value_Output {scoreOutput[3]} {
+    label {4th:}
+    xywh {270 276 33 24}
+  }
+  Fl_Value_Output {scoreOutput[4]} {
+    label {5th:}
+    xywh {270 311 33 24}
+  }
+  Fl_Output {nameOutput[0]} {
+    label {1st Name:}
+    xywh {120 171 110 24}
+  }
+  Fl_Output {nameOutput[1]} {
+    label {2nd Name:}
+    xywh {120 206 110 24}
+  }
+  Fl_Output {nameOutput[2]} {
+    label {3rd Name:}
+    xywh {120 241 110 24}
+  }
+  Fl_Output {nameOutput[3]} {
+    label {4th Name:}
+    xywh {120 276 110 24}
+  }
+  Fl_Output {nameOutput[4]} {
+    label {5th Name:}
+    xywh {120 311 110 24}
+  }
+  Fl_Input enterName {
+    label {Enter Your Name:}
+    xywh {145 121 100 24}
+  }
+  Fl_Value_Output scoreBox {
+    label {Your Score:}
+    xywh {145 96 33 24}
+  }
+  Fl_Output {} {
+    label {High Scores}
+    xywh {255 20 0 55} labelsize 25 labelcolor 137
+  }
+  Fl_Button backButton {
+    label {Back to Menu}
+    callback {scoreWindow->backButtonPress();}
+    xywh {360 170 170 70}
+  }
+  Fl_Button submitButton {
+    label Submit
+    callback {scoreWindow->submitButtonPress();}
+    xywh {255 120 64 25}
+  }
+} 
+
+Function {makeBackgroundSelectionWindow()} {open return_type {BackgroundSelectionWindow*}
+} {
+  code {return new BackgroundSelectionWindow(0, 0, 600, 400, "Select a Background");} {}
+} 
+
+Function {makeStartWindow()} {open return_type {StartWindow*}
+} {
+  code {return new StartWindow(0, 0, 600, 400, "Main Menu");} {}
+} 
+
+Function {makeInfoWindow()} {open return_type {InfoWindow*}
+} {
+  code {return new InfoWindow(0, 0, 600, 400, "About the Game");} {}
+} 
+
+Function {makeFighterSelectionWindow()} {open return_type {FighterSelectionWindow*}
+} {
+  code {return new FighterSelectionWindow(0, 0, 600, 400, "Select a Fighter");} {}
+} 
+
+Function {makeGameWindow()} {open return_type {GameWindow*}
+} {
+  code {return new GameWindow(0, 0, 600, 400, "Fight!");} {}
+} 
+
+Function {makeEndWindow()} {open return_type {EndWindow*}
+} {
+  code {return new EndWindow(0, 0, 600, 400, "Game Over");} {}
+} 
+
+Function {makeScoreWindow()} {open return_type {ScoreWindow*}
+} {
+  code {return new ScoreWindow(0, 0, 600, 400, "Scores");} {}
+} 
+
+decl {extern BackgroundSelectionWindow* backgroundSelectionWindow;} {public global
+} 
+
+decl {extern StartWindow* startWindow;} {public global
+} 
+
+decl {extern InfoWindow* infoWindow;} {public global
+} 
+
+decl {extern FighterSelectionWindow* fighterSelectionWindow;} {public global
+} 
+
+decl {extern GameWindow* gameWindow;} {public global
+} 
+
+decl {extern EndWindow* endWindow;} {public global
+} 
+
+decl {extern ScoreWindow* scoreWindow;} {public global
+} 
+
+decl {extern Fl_GIF_Image* backgroundImage;} {public global
+} 
